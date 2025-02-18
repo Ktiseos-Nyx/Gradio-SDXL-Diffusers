@@ -1,0 +1,33 @@
+# Core dependencies
+numpy>=1.26.4
+torch>=2.0.0
+diffusers>=0.21.4
+transformers>=4.30.0
+einops>=0.7.0
+open-clip-torch>=2.23.0
+
+# UI and interface
+gradio>=3.50.2
+
+# Model handling
+safetensors>=0.3.1
+accelerate>=0.23.0
+
+# Utilities
+psutil>=5.9.0
+requests>=2.31.0
+tqdm>=4.65.0
+gdown>=4.7.1
+
+# Type checking and validation
+typing-extensions>=4.8.0
+pydantic>=2.0.0
+
+# File handling and compression
+fsspec>=2023.0.0
+filelock>=3.13.0
+
+# Additional dependencies
+xformers>=0.0.0
+
+# Note: This app is hosted on Hugging Face Spaces, so ensure compatibility with their environment.
