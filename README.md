@@ -11,7 +11,7 @@ Colab edition here: https://github.com/Ktiseos-Nyx/Sdxl-to-diffusers
 |Huggingface| E&D Huggingface |[Earth & Dusk](https://huggingface.co/EarthnDusk)
 |Ko-Fi| Kofi Support |[![ko-fi](https://img.shields.io/badge/Support%20me%20on%20Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/Z8Z8L4EO)
 |Github| Ktiseos Nyx |[Ktiseos Nyx](https://github.com/Ktiseos-Nyx/)
-
+|Discord| Kitseos Nyx Discord |[Invite](https://discord.gg/HhBSvM9gBY)
 ## Credits 
 
 
