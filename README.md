@@ -1,6 +1,6 @@
 # Gradio-SDXL-Diffusers
 
-Gradio Application that's optimized for huggingface to convert SDXL models to diffusers. Heavily based on Camenduru &amp; Linaqruf code as well as my own.
+Gradio Application that's optimized for huggingface to convert SDXL models to diffusers. Heavily based on Camenduru &amp; Linaqruf code as well as my own. This is still in sad heavy development, as no AI LLM is really doing what I want since i'm clueless
 
 Colab edition here: https://github.com/Ktiseos-Nyx/Sdxl-to-diffusers
 
