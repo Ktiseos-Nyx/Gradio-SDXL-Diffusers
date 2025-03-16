@@ -14,6 +14,7 @@ from typing import Dict, List, Optional
 from huggingface_hub import login, HfApi, hf_hub_download
 from huggingface_hub.utils import validate_repo_id, HFValidationError
 from huggingface_hub.constants import HUGGINGFACE_HUB_CACHE
+import subprocess  # Import subprocess
 from huggingface_hub.utils import HfHubHTTPError
 from accelerate import Accelerator
 import re  # Import the 're' module
