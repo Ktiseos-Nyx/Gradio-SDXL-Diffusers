@@ -16,6 +16,7 @@ from huggingface_hub.utils import validate_repo_id, HFValidationError
 from huggingface_hub.constants import HUGGINGFACE_HUB_CACHE
 from huggingface_hub.utils import HfHubHTTPError
 from accelerate import Accelerator
+import re  # Import the 're' module
 
 
 # ---------------------- DEPENDENCIES ----------------------
@@ -99,7 +100,7 @@ def download_model(model_path_or_url):
 
 
 def create_model_repo(api, user, orgs_name, model_name, make_private=False):
-    """Creates a Hugging Face model repository, sanitizing inputs."""
+    """Creates a Hugging Face model repository, handling missing inputs and sanitizing the username."""
 
     print("---- create_model_repo Called ----")
     print(f"  user: {user}")
@@ -123,10 +124,13 @@ def create_model_repo(api, user, orgs_name, model_name, make_private=False):
         repo_id = f"{orgs_name}/{model_name.strip()}"
     elif user:
         sanitized_username = re.sub(r"[^a-zA-Z0-9._-]", "-", user['name'])
+        print(f"  Original Username: {user['name']}")
         print(f"  Sanitized Username: {sanitized_username}")
         repo_id = f"{sanitized_username}/{model_name.strip()}"
     else:
-        raise ValueError("Must provide either an organization name or be logged in.")
+        raise ValueError(
+            "Must provide either an organization name or be logged in."
+        )
 
     print(f"  repo_id: {repo_id}")
 
