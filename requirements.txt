@@ -1,18 +1,19 @@
 # Core dependencies
-gradio  # Let pip install the latest, <=5.16.1
-fastapi>=0.110.0  # Use the latest stable
+gradio  # Let pip install the latest  
+fastapi  # Use the latest stable
 uvicorn[standard]  # Let pip choose, but keep [standard]
-pydantic>=2.0 # Let pip choose the newest, but after 2.0
-httpx>=0.27.0  # Use the latest stable
-python-multipart>=0.0.9  # Use the latest stable
+pydantic # Let pip choose the newest, but after 2.0
+httpx # Use the latest stable
+python-multipart  # Use the latest stable
 
 # ML stack
-torch>=2.1.0  # Allow for updates, but keep a reasonable minimum
+torch  # Allow for updates, but keep a reasonable minimum
 diffusers  # Let pip install the latest
 transformers  # Let pip install the latest
 safetensors  # Let pip install the latest
 xformers  # Let pip resolve; torch manages this
+accelerate # It argues that this is codeded and testedd lol. 
 
 # Utilities
-requests>=2.31.0 # Use the latest stable.
+requests # Use the latest stable.
 huggingface_hub  # Let pip install the latest
